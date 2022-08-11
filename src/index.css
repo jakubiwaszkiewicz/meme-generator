@@ -1,8 +1,12 @@
+/* //// General rules //// */
 body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Karla", sans-serif;
 }
+
+/* //// Header section //// */
+
 header {
   display: flex;
   align-items: center;
@@ -21,4 +25,36 @@ header img {
 header h4 {
   font-size: 0.75rem;
   font-weight: 500;
+}
+
+/* //// main section ////  */
+
+main {
+  padding: 36px;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  background: linear-gradient(to right, purple, mediumvioletred);
+  color: white;
+  border: 0;
+  border-radius: 7px;
+}
+
+.Meme--meme {
+  max-width: 100%;
 }
